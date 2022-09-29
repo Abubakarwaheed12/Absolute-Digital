@@ -1278,10 +1278,12 @@ input[type=submit] {
     padding: 13px 55px;
     color: white;
     font-size: 34px;
-    font-weight: 600px;
+    font-weight: 600;
     background-color: #d30062;
     border-radius: 40px;
     border: 1px solid #d30062;
+    position: relative;
+    top: 7px;
 }
 
 .sub a:hover {
