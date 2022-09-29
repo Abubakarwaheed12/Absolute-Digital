@@ -8,7 +8,6 @@
     <title>Absolute Digital</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="jquery/jquery-3.6.0.js"></script>
-    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/a858774028.js" crossorigin="anonymous"></script>
 
 </head>
@@ -72,7 +71,7 @@
                     </div>
                 </div>
                 <div class="test">
-                    <div class="test2">
+                    <div  class="test2">
                         <h3>13+</h3>
                         <p>Year's Experience</p>
                     </div>
@@ -722,6 +721,7 @@
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
                         </ul>
                     </div>
@@ -764,11 +764,11 @@
                     <h2>Contact</h2>
                     <div class="contact_menu">
                         <ul>
-                            <li><a href="#">35 New Broad <br> Street London,
+                            <li> <span><img src="img/map.png" alt=""></span> <a href="#">35 New Broad <br> Street London,
                                     EC2M 1NH</a></li>
-                            <li><a href="#" style="font-size:22px; color: #d30062; text-decoration:underline;">0808 302
+                            <li> <span><img src="img/phone.png" alt=""></span><a href="#" style="font-size:22px;  font-weight: 800; color: white;">0808 302
                                     3286</a></li>
-                            <li><a href="#">hello@absolute.digital</a></li>
+                            <li><span><img src="img/mail.png" alt=""></span><a href="#" style="color: #d30062;">hello@absolute.digital</a></li>
                         </ul>
                     </div>
                 </div>
@@ -785,48 +785,10 @@
             Sitemap Terms Privacy Policy Cookie policy</p>
     </div>
 
+<!-- ------------INCLUDE JS----------- -->
+<script src="app.js"></script>
 
 
-    <!---------------ACCORDIAN SCRIPT------------------>
-    <script>
-
-        $('document').ready(function () {
-            $("#btn1").click(function () {
-                $("#para1").toggle(200);
-                $("$btn1").html("-");
-
-            })
-        });
-
-
-        //   menu 
-        $(document).ready(function () {
-            $(".toggle").click(function () {
-                // $(".menu.active").toggleClass("active");
-                $(".menu").toggleClass("active1");
-                $(".toggle").toggleClass("active2");
-            })
-        });
-
-    </script>
-
-    <script>
-        var acc = document.getElementsByClassName("accordian");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
