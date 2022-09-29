@@ -1211,7 +1211,7 @@ input[type=submit] {
 
 .news_btn a {
     text-decoration: none;
-    padding: 24px 60px;
+    padding: 20px 60px;
     color: white;
     font-size: 34px;
     font-weight: 600;
@@ -1224,7 +1224,7 @@ input[type=submit] {
     color: #d30062;
     border: 1px solid #d30062;
     background-color: white;
-    transition: 1s all;
+    transition: 0.2s all;
 }
 
 .learn_more img {
