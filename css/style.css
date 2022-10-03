@@ -20,14 +20,16 @@ body {
     padding-bottom: 24px;
 
 }
-header{
-    box-shadow: 0 2px 8px rgba(0,0,0,.09)!important;
+
+header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .09) !important;
     position: fixed;
     z-index: 99;
     background-color: white;
     width: 100%;
     top: 0px;
 }
+
 .logo img {
     padding-top: 20px;
 }
@@ -176,7 +178,7 @@ header{
     padding-top: 50px;
     padding-bottom: 55px;
     position: relative;
-    top:-1px;
+    top: -1px;
 }
 
 .numbers::after {
@@ -191,33 +193,18 @@ header{
     display: flex;
     justify-content: space-between;
 }
-
-.test1,
-.test2,
-.test3,
-.test4 {
+.test1,.test2,.test3,.test4 {
     position: relative;
 }
-
-.test1,
-.test2,
-.test3 {
+.test1,.test2,.test3 {
     border-right: 1px solid #2f2f2f;
     padding-right: 95px;
 }
-
-.test1 h3,
-.test2 h3,
-.test3 h3,
-.test4 h3 {
+.test1 h3,.test2 h3,.test3 h3,.test4 h3 {
     font-size: 72px;
     color: #e7006c;
 }
-
-.test1 p,
-.test2 p,
-.test3 p,
-.test4 p {
+.test1 p,.test2 p,.test3 p,.test4 p {
     color: #ffff;
     font-size: 22px;
 }
@@ -660,7 +647,7 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 65px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .case_stydy_btn a {
@@ -693,7 +680,9 @@ header{
     padding-top: 70px;
     padding-bottom: 154px;
     position: relative;
+    margin-top: 100px;
 }
+
 .sec6::after {
     content: url('../img/after_4.png');
     position: absolute;
@@ -783,15 +772,15 @@ header{
 /*  ---------award and recognizations--------------- */
 .sec7 {
     padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #fff;
+    background-image:url('../img/aw_top_right.jpg'), url('../img/awards_bottom.jpg');
+    background-position: right top,center bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,100% auto;
 }
 
-.sec7::after {
-    /* content:url('../img/after_5.png'); */
-    position: absolute;
-    z-index: -1;
-    top: -96px;
-    width: 100%;
-}
+
 
 .gal_1 {
     display: flex;
@@ -872,7 +861,10 @@ header{
     text-align: center;
     padding-top: 134px;
     font-weight: 800;
+    background: #fff url('../img/faq_bg_top.jpg') no-repeat top center;
+    background-size: 100% auto;
 }
+
 
 .questions {
     display: flex;
@@ -884,7 +876,8 @@ header{
 .q1 {
     max-width: 664px;
 }
-.accordian a{
+
+.accordian a {
     border: 1px solid;
     border-color: black;
     display: flex;
@@ -894,30 +887,34 @@ header{
     cursor: pointer;
     border-bottom: none;
 }
+
 .q_left1 span {
     display: flex;
     justify-content: space-between;
     padding-bottom: -1px;
     border-bottom: 2px solid black;
 }
-.active{
+
+.active {
     background-color: black;
     border-bottom: 2px solid white;
 }
- 
-.active h4{
+
+.active h4 {
     color: #e7006c;
     padding-left: 2px;
 }
 
-.active .plus{
-display: none;
+.active .plus {
+    display: none;
 }
-a.minus{
+
+a.minus {
     display: none;
     margin: 1px 1px 0px 0px;
 }
-.active .minus{
+
+.active .minus {
     display: block;
     border-color: white;
 }
@@ -982,9 +979,6 @@ a.minus{
     background-clip: padding-box;
 }
 
-/* .sec10::after{
-    content: url('../img/after_8.png');
-} */
 
 .game h2 {
     text-align: center;
@@ -1040,9 +1034,12 @@ a.minus{
     border: 1px solid #808080;
     margin-right: 18px;
 }
-input.c_name,input.p_name{
+
+input.c_name,
+input.p_name {
     margin-right: 0px;
 }
+
 .name input::placeholder,
 .email input::placeholder {
     color: white;
@@ -1101,19 +1098,10 @@ input[type=submit] {
     padding-bottom: 70px;
     gap: 50px;
 }
-
-.news_1,
-.news_2,
-.news_3 {
+.news_1,.news_2,.news_3 {
     width: 442px;
     height: 615px;
     border: 1px solid #d9d9d9;
-}
-
-.news_1:hover,
-.news_2:hover,
-.news_3:hover {
-    /* box-shadow: rgb(99 99 99 / 20%) 0px 45px 27px 25px; */
 }
 
 .news_1 img {
@@ -1244,10 +1232,6 @@ input[type=submit] {
     padding-bottom: 80px;
     position: relative;
 }
-/* .sec12::before{
-    content: url('../img/sub_mail_before.png');
-    position: absolute;
-} */
 .sec12 h2 {
     font-size: 60px;
     color: white;
@@ -1301,6 +1285,7 @@ input[type=submit] {
 .footer {
     width: 100%;
     background-color: black;
+    
 }
 
 .footer_top {
@@ -1377,9 +1362,11 @@ input[type=submit] {
     border: 2px solid #e7006c;
     color: white;
 }
-.follow_icons ul li:hover > a {
+
+.follow_icons ul li:hover>a {
     color: white;
 }
+
 .follow_icons ul li a {
     color: #b3b3b3;
     position: relative;
@@ -1444,24 +1431,20 @@ input[type=submit] {
     left: -40px;
     padding-top: 150px;
 }
-.contact_menu ul li a{
+
+.contact_menu ul li a {
     padding-left: 10px;
 }
 
 /* -------------footer bottom------------ */
 .footer_bottom {
-    background-color: black;
     padding-bottom: 138px;
     position: relative;
+    background: #000 url('../img/footer_bg.png') no-repeat bottom center;
+    background-size: 100% auto;
+
 }
 
-/* .footer_bottom::after{
-    content: url('../img/after_10.png');
-    position: absolute;
-    width: 70px;
-    height: 100px;
-    top: 0px;
-} */
 .footer_bottom p {
     padding-top: 50px;
     font-size: 14px;
@@ -1642,10 +1625,12 @@ input[type=submit] {
         left: 0px;
         transition: 0.6s all;
     }
-    .active2{
-        transform: rotate(360deg); 
+
+    .active2 {
+        transform: rotate(360deg);
         transition: 0.5s all;
     }
+
     .menu h3 {
         padding-left: 0px;
         justify-content: center;
@@ -2096,11 +2081,13 @@ input[type=submit] {
         flex-direction: column;
         gap: 20px;
     }
-   .form{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-   }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
     .message {
         max-width: 100%;
     }
@@ -2131,7 +2118,8 @@ input[type=submit] {
     .q_left1 span h4 {
         padding-top: 0px;
     }
-    .q_left1 span h4{
+
+    .q_left1 span h4 {
         font-size: 14px;
     }
 
@@ -2152,35 +2140,42 @@ input[type=submit] {
         width: 73%;
     }
 
-    .lodbrok img{
+    .lodbrok img {
         max-width: 100%;
         width: 49%;
     }
-    .sec6_btn a{
+
+    .sec6_btn a {
         padding: 12px 38px;
     }
 
     /* btns */
-    .news_btn a{
+    .news_btn a {
         padding: 13px 35px;
     }
-    .hero_section{
+
+    .hero_section {
         padding-bottom: 228px;
         padding-top: 82px;
     }
-    .questions{
+
+    .questions {
         padding-top: 30px;
-   }
-   .sec6{
-    padding-top: 10px;
-   }
+    }
+
+    .sec6 {
+        padding-top: 10px;
+    }
 }
 
-@media(max-width:380px){
-    .name input, .email input{
+@media(max-width:380px) {
+
+    .name input,
+    .email input {
         max-width: 280px;
     }
-    .numbers{
+
+    .numbers {
         padding-top: 0px;
     }
 }
