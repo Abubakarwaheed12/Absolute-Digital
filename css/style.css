@@ -807,6 +807,7 @@ header {
     background-size: cover;
     padding-bottom: 165px;
     position: relative;
+    margin-top:-1px;
 }
 
 .need_agency::after {
@@ -856,13 +857,16 @@ header {
 }
 
 /* ----------------FREQUENTLY ASKED QUESTIONS----------------------- */
+.sec9{
+    background: #fff url('../img/faq_bg_top.jpg') no-repeat top center;
+    background-size: 100% auto;
+}
 .sec9 h2 {
     font-size: 60px;
     text-align: center;
     padding-top: 134px;
     font-weight: 800;
-    background: #fff url('../img/faq_bg_top.jpg') no-repeat top center;
-    background-size: 100% auto;
+
 }
 
 
